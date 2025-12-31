@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ### Step 2: Select DOM Elements
     
     // Select the "Add Task" button
-    const addButton = document.getElementById('add-button');
+    const addButton = document.getElementById('add-task');
     // Select the input field
     const taskInput = document.getElementById('task-input');
     // Select the unordered list
@@ -50,15 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-const addButton = document.getElementById('add-task-button');
-const taskInput = document.getElementById('task-input');
-const taskList = document.getElementById('task-list');
-function addTask() {
-  const taskText = taskInput.value.trim();
-    if (taskText === '') {
-    alert('Please enter a task.');
-    return;
-  }
+// const addButton = document.getElementById('add-task-button');
+// const taskInput = document.getElementById('task-input');
+// const taskList = document.getElementById('task-list');
+// function addTask() {
+//   const taskText = taskInput.value.trim();
+//     if (taskText === '') {
+//     alert('Please enter a task.');
+//     return;
+//   }
     // Inside the addTask function, after the empty check
   const li = document.createElement('li');
   li.textContent = taskText;
